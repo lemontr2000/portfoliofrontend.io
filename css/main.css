@@ -122,13 +122,16 @@ html{
     cursor: pointer; /*thay đổi con trỏ chuột*/
 }
 #slider {
-    margin-top: 47px;
-    padding-top: 50%;
-    background-image: url('./img/112642.png');
-    background-position: top center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+}
+.img-slider{
+    width: 100%;
+    left: 0;
+    right: 0;
+    display: block;
 }
 #slider .text-content{
     position: absolute;
