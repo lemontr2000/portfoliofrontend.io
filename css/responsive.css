@@ -16,6 +16,9 @@
 /* End responsive tablet*/
 /* begin responsive mobile*/
 @media (max-width: 46.1875em){
+    #content .content-section{
+        padding: 50px 16px;
+    }
     .text-content{
         display: none;
     }
