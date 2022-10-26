@@ -1,8 +1,5 @@
 /* begin responsive tablet*/
 @media (max-width:  63.9375em) and ( min-width:46.25em){
-    *{
-        color: blueviolet;
-    }
     .content{
         padding-right: 16px;
     }
