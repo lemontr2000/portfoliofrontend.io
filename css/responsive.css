@@ -16,6 +16,9 @@
 /* End responsive tablet*/
 /* begin responsive mobile*/
 @media (max-width: 46.1875em){
+    .text-content{
+        display: none;
+    }
     .s-full-width{
         width: 100%;
         text-align: center;

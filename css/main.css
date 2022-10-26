@@ -130,7 +130,6 @@ html{
     position: relative;
 }
 #slider .text-content{
-    display: inline-block;
     position: absolute;
     color: #fff;
     text-align: center;
