@@ -1,0 +1,326 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content .clear {
+    clear: both;
+}
+.text-white{
+    color: #fff !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-full{
+    width: 100%;
+}
+.col-third{
+    width: 33.33333%;
+}
+.col-second{
+    width: 50%;
+}
+.btn{
+    cursor: pointer;
+    background-color: orangered;
+    color: #fff;
+    border: 1px solid #000;
+}
+.btn-hover:hover{
+    background-color: rgb(53, 49, 49);
+}
+#header {
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+#menu-header{
+    display: none;
+}
+#nav > li > a{
+    color: #fff; /* Chỉnh màu chữ phần head nhưng không ảnh hương đến các thẻ khác*/
+    text-transform: uppercase;
+}
+#nav {
+    display: inline-block;
+}
+#nav-mobile{
+    display: none;
+}
+#nav li a {
+    text-decoration: none;
+    line-height: 47px;
+    padding: 0 24px;
+    display: block;
+    /* dùng để chỉnh lại viền sáng*/
+}
+#nav .subnav li:hover a ,/*dùng để tạo vùng sáng khi chỉ chuột vào thẻ con*/
+#nav > li:hover > a { /*dùng để tạo vùng sáng khi chỉ chuột vào thẻ cha*/
+    color: #000;
+    background-color: #ccc;
+}
+#nav li{
+    position: relative;
+    list-style-type: none;
+}
+#nav > li {/*cho các thẻ home band.. vào khung đen */
+    display: inline-block;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav .subnav { /*Chỉnh thẻ con nằm trong thẻ cha More biển trắng */
+    display: none;
+    /*top: 47px; trường hợp không dùng display bằng none thì sẽ dùng top left chỉnh vị trí bảng trắng thủ công*/
+    min-width: 160px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{ /*Chỉnh màu chữ riêng cho thẻ con*/
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+#nav .nav-arrow-down{ /*chỉnh màu cho font kế More*/
+    color: orangered;   
+}
+#header .search-btn{ /*Thẻ div của nút search dùng để chỉnh vị trí*/
+    float: right;
+    line-height: 47px;
+    padding: 0px 22px;
+}
+#header .search-icon{ /*Thẻ con của search cùng để chỉnh màu và kích thước*/
+    color: #fff;
+    font-size: 20px;
+}
+#header .search-btn:hover {/* thuộc tính của nút search*/
+    background-color: rgb(194, 3, 3);
+    cursor: pointer; /*thay đổi con trỏ chuột*/
+}
+#slider {
+    margin-top: 47px;
+    padding-top: 50%;
+    background-image: url('/img/112642.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    text-align: center;
+    /*left: 50%;
+    transform: translateX(-50%);Những cách căn giữa*/
+    /*width: 100%;Những cách căn giữa*/
+    left: 0;
+    right: 0;
+}
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 30px;
+    padding: 10px;
+}
+#slider .text-desciption{
+    font-size: 24px;
+}
+#content{
+    margin-bottom: 48px;
+}
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.5;
+}
+#content .content-section .about-text{
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+#content .member-list{
+    margin:  0 275px 64px;
+    margin-top: -50px;
+}
+#content .member-item{
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+#content .member-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+#content .member-img{
+    width:  70%;
+    border-radius: 5px;
+}
+#content .tour-section{
+    background-color: 	#FF5F1F;
+}
+#content .sticket-list{
+    background-color: #fff;
+    list-style: none;
+}
+#content .sticket-list li{
+    font-size: 15px;
+    border-bottom: 1px solid #000;
+    padding: 8px 16px;
+}
+#content .sticket-list .note{
+    border-top: 1px solid #000;
+}
+#content .sticket-list .sold-out{
+    background-color: #f44336;
+    margin-left: 4px;
+    padding: 1px 4px;
+    color: #fff;
+}
+#content .sticket-list .quality{
+    background-color: black;
+    float: right;
+    padding: 1px 5px;
+    border-radius: 50%;
+}
+.music-hayd{
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+}
+.place-list{
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: 32px;
+}
+.place-list .place-item{
+    float:left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+.place-list .place-img{
+    width: 100%;
+    height: 220px;
+    display: block;
+    border: 1px solid black;
+    border-bottom: none;
+}
+.text-place-tour{
+    background-color: rgb(218, 211, 211);
+    font-size: 15px;
+    border: 1px solid black;
+    padding-left: 16px;
+    padding-bottom: 16px;
+}
+/* text cho tour place*/
+.place-heading{
+    margin-top: 15px;
+    font-weight: 550;
+}
+.place-time{
+    margin: 15px 0;
+    opacity: 0.5;
+}
+.place-decs{
+    margin: 15px 0;
+}
+.place-buy-btn{
+    padding: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+}
+.contact-content{
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i[class*=ti-]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.form-control{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 8px;
+}
+.send-btn{
+    margin-top: 16px;
+    float: right;
+    padding:  12px 18px;
+    outline: #000;   
+}
+.img-map{
+    width: 100%;
+    display: inline-block;
+}
+#footer{
+    text-align: center;
+    width: 100%;
+    margin: 64px 0;
+    font-size: 24px;
+}
+#footer .icon-ft a{
+    text-decoration: none;
+    color: #000;
+}
+#footer .lick-ft,
+#footer .ft-drt{
+    color: rgb(61, 57, 57);
+    margin-top: 5px;
+    font-size: 15px;
+    display: inline-block;
+}
+#footer .icon-ft a:hover,
+#footer .lick-ft:hover{
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+    cursor: pointer;
+}
