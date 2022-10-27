@@ -124,7 +124,7 @@ html{
 .img-slider{
     display: block;
     margin-top: 45px;
-    max-width: 100%;
+    width: 100%;
     left: 0;
     right: 0;
     position: relative;
