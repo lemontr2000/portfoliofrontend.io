@@ -133,8 +133,8 @@
         display: none;
         list-style-type: none;
     }
-    .navc-mobile>li:checked{
-        display: none;
+    .navc-mobile>li:hover{
+        display: block;
     }
     .subnav-mobile>li:hover,
     #nav-mobile .navc-mobile >li:hover{
