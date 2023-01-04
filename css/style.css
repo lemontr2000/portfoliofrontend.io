@@ -4,6 +4,7 @@
     box-sizing: inherit;
 }
 html{
+    background-color: rgb(245,245,245);
     font-size: 62.5%;
     line-height: 1.6rem;
     box-sizing: border-box;
@@ -12,6 +13,16 @@ html{
 :root{
     --white-color: #fff;
     --black-color: #000;
+}
+.center{
+    align-self: center;
+    text-align: center;
+}
+.display{
+    display: flex;
+}
+.clear::after{
+    clear: both;
 }
 .grid{
     width: 1200px;
@@ -28,7 +39,7 @@ html{
 .text-fix-black{
     text-decoration: none;
     list-style-type: none;
-    font-weight: 300;
+    font-weight: 100;
     color: var(--black-color);
 }
 .hover_opacity:hover{
@@ -146,9 +157,11 @@ html{
     font-size: 16px;
 }
 .taskbar ul>li{
+    display: inline-block;
     text-decoration: none;
     list-style-type: none;
     width: 190px;
+    font-size: 14px;
 }
 .taskbar{
     text-decoration: none;
@@ -156,11 +169,57 @@ html{
     margin-right: 20px;
 }
 .taskbar ul{
+    display: inline;
     font-weight: bold;
     color: rgba(0,0,0,.8);
 }
 .content{
-    background-color: #f53d2d;
-    height: 15px;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.search_result_item{
+    display: flex;
+}
+.sort_bar{
+    background-color: rgba(0,0,0,.03);
+    display: flex;
+    padding: 13px 20px;
+    font-size: 14px;
+}
+.sort_bar_option{
+    display: flex;
+    flex: 2;
+}
+.sort-option{
+    padding: 5px 15px;
+    margin-left: 10px;
+    background-color: #fff;
+    align-self: center;
+    text-align: center;
+}
+.select_status_price{
+    text-align: left;
+    width: 145px;
+}
+.status_price_ic{
+    background-color: #fff;
+    padding: 9px 5px;
+}
+.mini_page_control{
+    display: flex;
+    flex: 0;
+}
+.mini_page_control-deco{
+    border-right: 1px #ccc solid ;
+}
+.mini_page_control>i{
+    background-color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3%;
+    padding: 10px 8px;
+}
+.mini_page_control>p{
+    margin-right: 20px;
 }
